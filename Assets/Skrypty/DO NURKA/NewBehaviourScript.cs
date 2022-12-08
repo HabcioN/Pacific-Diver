@@ -11,9 +11,12 @@ public class NewBehaviourScript : MonoBehaviour
     public bool kierunekWPrawo = true;
     private Animator anim;
     private bool naPlatformie = true;
-    public Transform testerPolozeniaPostaci;
-    public LayerMask maskaWarstwyDoTestowania;
+   
+   
     public float launchForce;
+    public ProjectileBehaviour ProjectilePrefab;
+    public Transform LaunchOffset;
+
     void Start()
     {
         respawnPoint = transform.position;
@@ -57,11 +60,14 @@ public class NewBehaviourScript : MonoBehaviour
         {
             anim.SetInteger("FazaAnimacji", 0);
         }
-        naPlatformie = Physics2D.OverlapCircle((Vector2)testerPolozeniaPostaci.position, 0.1f, maskaWarstwyDoTestowania);
-        if (Input.GetKeyDown(KeyCode.Space) && naPlatformie == true)
+       
+        
+        if (Input.GetButtonDown("Fire1") )
         {
-            rbBody.AddForce(new Vector2(0f, silaSkoku));
+            Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
 
         }
+    
     }
+
 }
