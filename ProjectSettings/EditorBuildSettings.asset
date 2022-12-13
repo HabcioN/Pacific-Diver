@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: "Assets/Scenes/G\u0141\xD3WNA SCENA.unity"
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
-    path: Assets/Scenes/GRA.unity
-    guid: d2316c53dba1f2645946babe9341cab0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
