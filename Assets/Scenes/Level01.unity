@@ -2340,6 +2340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 852763692}
   bulletPrefab: {fileID: 9059537019809855653, guid: afca860d7dbe1384c88d959024fbf573, type: 3}
+  firerate: 1.2
 --- !u!60 &2002418377
 PolygonCollider2D:
   m_ObjectHideFlags: 0

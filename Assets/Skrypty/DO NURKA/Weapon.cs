@@ -6,7 +6,15 @@ public class Weapon : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
-   
+    public float firerate;
+    float nextfire;
+    private Animator anim;
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
+
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
@@ -17,7 +25,14 @@ public class Weapon : MonoBehaviour
     }
     void Shoot()
     {
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        if (Time.time > nextfire)
+        {
+            nextfire = Time.time + firerate;
+            Debug.Log(nextfire);
+            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            anim.Play("reloadanimation");
+        }
+        
 
     }
 

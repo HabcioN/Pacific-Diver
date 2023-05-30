@@ -50,7 +50,11 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetBool("walk", false);
         }
-
+        
+        if (Input.GetButtonDown("Jump"))
+        {
+            anim.Play("JumpAnimation");
+        }
 
     }
 }
