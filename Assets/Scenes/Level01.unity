@@ -1380,6 +1380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   deathEffect: {fileID: 0}
+  damage: 25
 --- !u!50 &1391978133
 Rigidbody2D:
   serializedVersion: 4
@@ -1531,7 +1532,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1391978131}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.8499994, y: -3.07, z: 0}
+  m_LocalPosition: {x: -6.8499994, y: -2.92, z: 0}
   m_LocalScale: {x: 1.6785406, y: 1.6438109, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1762,7 +1763,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1396270223}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64c34e021056aeb408911d590aeb6fd7, type: 3}
   m_Name: 
@@ -2128,6 +2129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   deathEffect: {fileID: 0}
+  damage: 25
 --- !u!1 &1852545363
 GameObject:
   m_ObjectHideFlags: 0
@@ -2482,8 +2484,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 1
+  m_Size: {x: 0.6, y: 1.2}
+  m_EdgeRadius: 0.5
 --- !u!1 &2075742056
 GameObject:
   m_ObjectHideFlags: 0
