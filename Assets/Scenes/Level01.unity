@@ -1554,6 +1554,7 @@ GameObject:
   - component: {fileID: 1396270229}
   - component: {fileID: 1396270228}
   - component: {fileID: 1396270230}
+  - component: {fileID: 1396270231}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -1754,6 +1755,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
+--- !u!114 &1396270231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396270223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64c34e021056aeb408911d590aeb6fd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 25
 --- !u!1 &1454715945
 GameObject:
   m_ObjectHideFlags: 0
@@ -2161,11 +2175,14 @@ GameObject:
   - component: {fileID: 2002418370}
   - component: {fileID: 2002418369}
   - component: {fileID: 2002418373}
+  - component: {fileID: 2002418379}
   - component: {fileID: 2002418376}
   - component: {fileID: 2002418375}
   - component: {fileID: 2002418374}
   - component: {fileID: 2002418371}
   - component: {fileID: 2002418377}
+  - component: {fileID: 2002418378}
+  - component: {fileID: 2002418380}
   m_Layer: 0
   m_Name: GRACZ
   m_TagString: Untagged
@@ -2412,6 +2429,61 @@ PolygonCollider2D:
       - {x: -0.089999996, y: -0.53999996}
       - {x: -0.089999996, y: -0.88}
       - {x: -0.11, y: -0.88}
+--- !u!114 &2002418378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002418368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
+--- !u!114 &2002418379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002418368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3c5f724013354f4f9ab13372024ab99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  deathEffect: {fileID: 0}
+--- !u!61 &2002418380
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002418368}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3, y: 2.1}
+    newSize: {x: 3, y: 3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 1
 --- !u!1 &2075742056
 GameObject:
   m_ObjectHideFlags: 0
