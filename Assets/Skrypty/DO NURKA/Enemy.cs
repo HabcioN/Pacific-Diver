@@ -46,7 +46,7 @@ public class Enemy : MonoBehaviour
     private void Update()
     {
         // SprawdŸ, czy obiekt siê porusza
-        bool poruszaSie = (GetComponent<Rigidbody>().velocity.magnitude > 0);
+        bool poruszaSie = (GetComponent<Rigidbody2D>().velocity.magnitude > 0);
 
         // Jeœli obiekt siê porusza, odpal animacjê "chodzenie"
         if (poruszaSie)
