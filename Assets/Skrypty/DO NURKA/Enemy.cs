@@ -8,11 +8,18 @@ public class Enemy : MonoBehaviour
     private Animator anim;
     public GameObject deathEffect;
     private bool isDead = false;
+    private Rigidbody2D rb;
+    private RigidbodyConstraints2D originalConstraints;
+    public Transform gracz;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
         //anim.enabled = true;
+        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
+        originalConstraints = rb.constraints; ;
+        StartCoroutine(ObserwujPozycjeGracza());
     }
 
     public void TakeDamage (int damage)
@@ -21,16 +28,38 @@ public class Enemy : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
+            rb.constraints = RigidbodyConstraints2D.FreezeAll;
             anim.Play("smierc");
         }
     }
 
-    private void Update()
+    void Update()
     {
         if (!isDead && anim.GetCurrentAnimatorStateInfo(0).IsName("smierc"))
         {
             isDead = true;
             StartCoroutine(DieAfterAnimation());
+        }
+
+    }
+
+    IEnumerator ObserwujPozycjeGracza()
+    {
+        
+        while (true)
+        {
+            yield return new WaitForSeconds(0.1f); // Sprawdzaj pozycjê gracza co pó³ sekundy
+
+            if (gracz != null)
+            {
+                Vector3 kierunek = gracz.position - transform.position;
+                kierunek.y = 0f;
+
+                if (kierunek != Vector3.zero)
+                {
+                    transform.rotation = Quaternion.LookRotation(kierunek);
+                }
+            }
         }
     }
 
