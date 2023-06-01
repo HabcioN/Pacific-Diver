@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -68,7 +69,7 @@ public class Enemy : MonoBehaviour
     {
         Destroy(gameObject);
     }
-    public int damage = 25;
+    public int damage = 1;
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
