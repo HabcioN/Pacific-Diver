@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     private Rigidbody2D rb;
     private RigidbodyConstraints2D originalConstraints;
     public Transform gracz;
+    public float odlegloscMinimalna = 10f;
 
     private void Start()
     {
@@ -18,8 +19,8 @@ public class Enemy : MonoBehaviour
         //anim.enabled = true;
         rb = GetComponent<Rigidbody2D>();
         rb = GetComponent<Rigidbody2D>();
-        originalConstraints = rb.constraints; ;
-        StartCoroutine(ObserwujPozycjeGracza());
+        originalConstraints = rb.constraints; 
+        //StartCoroutine(ObserwujPozycjeGracza());
     }
 
     public void TakeDamage (int damage)
@@ -41,27 +42,21 @@ public class Enemy : MonoBehaviour
             StartCoroutine(DieAfterAnimation());
         }
 
-    }
-
-    IEnumerator ObserwujPozycjeGracza()
-    {
-        
-        while (true)
+        if (gracz != null)
         {
-            yield return new WaitForSeconds(0.1f); // Sprawdzaj pozycjê gracza co pó³ sekundy
+            Vector3 kierunek = gracz.position - transform.position;
+            kierunek.y = 0f;
 
-            if (gracz != null)
+            // SprawdŸ czy gracz jest po prawej stronie postaci
+            if (Vector3.Dot(kierunek, transform.right) > 0 && kierunek.magnitude > odlegloscMinimalna)
             {
-                Vector3 kierunek = gracz.position - transform.position;
-                kierunek.y = 0f;
-
-                if (kierunek != Vector3.zero)
-                {
-                    transform.rotation = Quaternion.LookRotation(kierunek);
-                }
+                transform.Rotate(0f, 180f, 0f);
             }
+           
         }
     }
+
+    
 
     IEnumerator DieAfterAnimation()
     {
@@ -87,15 +82,5 @@ public class Enemy : MonoBehaviour
         
     }
     
-    //private void Update()
-    //{
-        // SprawdŸ, czy obiekt siê porusza
-        //bool poruszaSie = (GetComponent<Rigidbody2D>().velocity.magnitude > 0);
-
-        // Jeœli obiekt siê porusza, odpal animacjê "chodzenie"
-        //if (poruszaSie)
-        //{
-            //anim.Play("chodzenie");
-        //}
-    //}
+    
 }

@@ -1011,6 +1011,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1038168076}
+  - component: {fileID: 1038168078}
   - component: {fileID: 1038168075}
   - component: {fileID: 1038168074}
   - component: {fileID: 1038168073}
@@ -1018,7 +1019,6 @@ GameObject:
   - component: {fileID: 1038168071}
   - component: {fileID: 1038168070}
   - component: {fileID: 1038168069}
-  - component: {fileID: 1038168078}
   - component: {fileID: 1038168079}
   m_Layer: 0
   m_Name: Enemy (1)
@@ -1223,7 +1223,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038168068}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.93, y: -2.81, z: 21.662342}
   m_LocalScale: {x: 1, y: 0.99999994, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1245,6 +1245,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   deathEffect: {fileID: 0}
+  gracz: {fileID: 2002418370}
+  odlegloscMinimalna: 10
   damage: 25
 --- !u!60 &1038168079
 PolygonCollider2D:
@@ -2051,6 +2053,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   deathEffect: {fileID: 0}
+  gracz: {fileID: 0}
+  odlegloscMinimalna: 10
   damage: 25
 --- !u!60 &1825599051
 PolygonCollider2D:
