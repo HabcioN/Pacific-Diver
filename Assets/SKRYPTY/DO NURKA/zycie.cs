@@ -50,6 +50,7 @@ public class zycie : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
+            serce[0].sprite = puste;
             Die();
         }
     }
