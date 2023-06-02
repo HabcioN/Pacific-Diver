@@ -5,21 +5,26 @@ using UnityEngine.UI;
 
 public class zycie : MonoBehaviour
 {
-    
     private Animator animator;
     public GameObject deathEffect;
 
     public int health;
     public int liczbaserc;
-
+    private GameObject player;
     public Image[] serce;
     public Sprite pelne;
     public Sprite puste;
 
-
+    public Text deathText; 
+    void Start()
+    {
+        player = GameObject.Find("GRACZ");
+        deathText = GameObject.Find("DeathText").GetComponent<Text>();
+        deathText.enabled = false; 
+    }
     void Update()
     {
-        if(health > liczbaserc)
+        if (health > liczbaserc)
         {
             health = liczbaserc;
         }
@@ -45,6 +50,7 @@ public class zycie : MonoBehaviour
             }
         }
     }
+
     public void TakeDamage(int damage)
     {
         health -= damage;
@@ -57,8 +63,8 @@ public class zycie : MonoBehaviour
 
     void Die()
     {
-    
-        Destroy(gameObject);
-        
+        deathText.enabled = true; // Pokazujemy tekst po œmierci gracza
+        deathText.text = "You died";
+        Destroy(player);
     }
 }

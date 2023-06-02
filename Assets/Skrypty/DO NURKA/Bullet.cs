@@ -10,6 +10,8 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         rb.velocity = transform.right * speed;
+        DestroyAfterDelay(5f);
+        rb.gravityScale = 0.5f;
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo)
@@ -21,9 +23,13 @@ public class Bullet : MonoBehaviour
         
         Destroy(gameObject);
         }
-
-
         
+
+
     }
-    
+    private void DestroyAfterDelay(float delay)
+    {
+        Destroy(gameObject, delay);
+    }
+
 }
