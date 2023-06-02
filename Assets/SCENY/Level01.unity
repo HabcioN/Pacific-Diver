@@ -491,7 +491,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -27.299997, y: 152}
+  m_AnchoredPosition: {x: -1.0999985, y: 218.99998}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &177090079
@@ -681,7 +681,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25, y: 152}
+  m_AnchoredPosition: {x: 51.199997, y: 218.99998}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &401988839
@@ -1080,7 +1080,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 79, y: 152}
+  m_AnchoredPosition: {x: 105.2, y: 218.99998}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &819520967
@@ -1205,7 +1205,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841691060f00e4e429aff6fa8e9c744f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mainMenu: {fileID: 38064301}
 --- !u!114 &885384735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1819,7 +1818,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -135.2, y: 152}
+  m_AnchoredPosition: {x: -109, y: 219}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1108403526
@@ -1991,7 +1990,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -80.7, y: 152}
+  m_AnchoredPosition: {x: -54.5, y: 218.99998}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1360984633
@@ -3058,6 +3057,7 @@ MonoBehaviour:
   - {fileID: 819520967}
   pelne: {fileID: 21300000, guid: ad7a0af58b8b81b49ad5e26be5cf3f9e, type: 3}
   puste: {fileID: 21300000, guid: 40370047ab7a40b40afe73a2cfd99ea0, type: 3}
+  deathText: {fileID: 0}
 --- !u!61 &2002418380
 BoxCollider2D:
   m_ObjectHideFlags: 0
