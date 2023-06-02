@@ -11,6 +11,7 @@ public class Bullet : MonoBehaviour
     {
         rb.velocity = transform.right * speed;
         DestroyAfterDelay(5f);
+        rb.gravityScale = 0.5f;
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo)
