@@ -33,6 +33,11 @@ public class punkty1 : MonoBehaviour
         }
     }
 
+    public void AddPoints(int points)
+    {
+        ScoreNum += points;
+        UpdateScoreText();
+    }
     private void UpdateScoreText()
     {
         SCORE.text = "SCORE : " + ScoreNum;
