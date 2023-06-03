@@ -9,7 +9,6 @@ public class sledzenie : MonoBehaviour
     public float yOffset = 1f;
     public Transform postac;
 
-    // Update is called once per frame
     void Update()
     {
         Vector3 newPos = new Vector3(postac.position.x, transform.position.y, -10f);
