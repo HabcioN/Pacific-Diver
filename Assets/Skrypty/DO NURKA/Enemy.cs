@@ -13,15 +13,16 @@ public class Enemy : MonoBehaviour
     private RigidbodyConstraints2D originalConstraints;
     public Transform gracz;
     public float odlegloscMinimalna = 10f;
+    public int punktyDodatkowe = 100;
+    private punkty1 punktyScript;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
-        //anim.enabled = true;
         rb = GetComponent<Rigidbody2D>();
         rb = GetComponent<Rigidbody2D>();
-        originalConstraints = rb.constraints; 
-        //StartCoroutine(ObserwujPozycjeGracza());
+        originalConstraints = rb.constraints;
+        punktyScript = FindObjectOfType<punkty1>();
     }
 
     public void TakeDamage (int damage)
@@ -32,6 +33,10 @@ public class Enemy : MonoBehaviour
         {
             rb.constraints = RigidbodyConstraints2D.FreezeAll;
             anim.Play("smierc");
+            if (punktyScript != null)
+            {
+                punktyScript.AddPoints(punktyDodatkowe);
+            }
         }
     }
 
