@@ -20,8 +20,7 @@ public class zycie : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("GRACZ");
-        deathText = GameObject.Find("DeathText").GetComponent<Text>();
-        deathText.enabled = false; 
+        
     }
     void Update()
     {
@@ -65,8 +64,6 @@ public class zycie : MonoBehaviour
     void Die()
     {
         Destroy(player);
-        deathText.enabled = true; // Pokazujemy tekst po œmierci gracza
-        deathText.text = "You died";
         DeathScreen.SetActive(true);
     }
 }
