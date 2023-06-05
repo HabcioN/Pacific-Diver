@@ -63,8 +63,9 @@ public class zycie : MonoBehaviour
 
     void Die()
     {
+        Destroy(player);
         deathText.enabled = true; // Pokazujemy tekst po œmierci gracza
         deathText.text = "You died";
-        Destroy(player);
+        
     }
 }
