@@ -7,6 +7,7 @@ public class zycie : MonoBehaviour
 {
     private Animator animator;
     public GameObject deathEffect;
+    public GameObject GUI;
 
     public int health;
     public int liczbaserc;
@@ -66,6 +67,7 @@ public class zycie : MonoBehaviour
         Destroy(player);
         deathText.enabled = true; // Pokazujemy tekst po œmierci gracza
         deathText.text = "You died";
+
         
     }
 }
