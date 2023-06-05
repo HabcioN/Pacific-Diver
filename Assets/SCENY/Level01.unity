@@ -1652,7 +1652,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010812192}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.37, y: 0.13, z: 21.662342}
+  m_LocalPosition: {x: -6.6, y: 2.28, z: 21.662342}
   m_LocalScale: {x: 1, y: 0.99999994, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1671,9 +1671,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c144055163cc49b48ab3bdbf4aef0a08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossPrefab: {fileID: 1010812192}
-  krab1: {fileID: 1038168068}
-  krab2: {fileID: 1656394612}
 --- !u!1 &1038168068
 GameObject:
   m_ObjectHideFlags: 0
