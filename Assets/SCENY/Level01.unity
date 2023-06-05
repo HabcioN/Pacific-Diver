@@ -1816,7 +1816,7 @@ MonoBehaviour:
   gracz: {fileID: 2002418370}
   odlegloscMinimalna: 10
   punktyDodatkowe: 100
-  damagePerSecond: 10
+  damagePerSecond: 1
 --- !u!4 &786270586
 Transform:
   m_ObjectHideFlags: 0
@@ -2899,7 +2899,7 @@ MonoBehaviour:
   gracz: {fileID: 2002418370}
   odlegloscMinimalna: 10
   punktyDodatkowe: 100
-  damagePerSecond: 10
+  damagePerSecond: 1
 --- !u!60 &1038168079
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4729,7 +4729,7 @@ MonoBehaviour:
   gracz: {fileID: 2002418370}
   odlegloscMinimalna: 10
   punktyDodatkowe: 100
-  damagePerSecond: 10
+  damagePerSecond: 1
 --- !u!4 &1656394622
 Transform:
   m_ObjectHideFlags: 0
