@@ -7,11 +7,20 @@ public class punkty1 : MonoBehaviour
 {
     public Text SCORE;
     private int ScoreNum;
+    public GameObject VictoryScreen;
 
     void Start()
     {
         ScoreNum = 0;
         SCORE.text = "SCORE : " + ScoreNum;
+    }
+
+    void Update()
+    {
+        if(ScoreNum == 700)
+        {
+            VictoryScreen.SetActive(true);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D Coin1)
