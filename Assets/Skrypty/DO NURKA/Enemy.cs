@@ -98,7 +98,7 @@ public class Enemy : MonoBehaviour
         {
             anim.Play("atak");
             gracz.TakeDamage(damagePerSecond);
-            yield return new WaitForSeconds(2f); // Zadawanie obra¿eñ co sekundê
+            yield return new WaitForSeconds(4f); // Zadawanie obra¿eñ co sekundê
         }
     }
 
