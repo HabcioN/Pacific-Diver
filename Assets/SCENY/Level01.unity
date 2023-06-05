@@ -936,9 +936,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1be635497d2c2c408a3a1e78b675a61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FollowSpeed: 2
+  followSpeed: 2
   yOffset: 1
-  postac: {fileID: 2002418370}
+  target: {fileID: 2002418370}
+  minPosition: {x: -16.2, y: 0}
+  maxPosition: {x: 16.2, y: 0}
 --- !u!1 &595603298
 GameObject:
   m_ObjectHideFlags: 0
