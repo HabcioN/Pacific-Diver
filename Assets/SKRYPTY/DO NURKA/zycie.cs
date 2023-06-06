@@ -54,7 +54,13 @@ public class zycie : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
-        if (health <= 0)
+        if (serce.Length > 1 && serce[1].sprite == pelne && health <= 0)
+        {
+            serce[0].sprite = puste;
+            serce[1].sprite = puste;
+            Die();
+        }
+        else if (health <= 0)
         {
             serce[0].sprite = puste;
             Die();

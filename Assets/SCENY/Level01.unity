@@ -5192,8 +5192,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Back to menu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 48da7a9f9e2697941a17b7d9ba3431b9, type: 2}
-  m_sharedMaterial: {fileID: -6989575714895485758, guid: 48da7a9f9e2697941a17b7d9ba3431b9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 63499d47ddd76d04f90cdf5dcee05a45, type: 2}
+  m_sharedMaterial: {fileID: -8327819794909941043, guid: 63499d47ddd76d04f90cdf5dcee05a45, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5414,7 +5414,7 @@ MonoBehaviour:
   radius: 1.07
   height: 2.18
   canMove: 1
-  maxSpeed: 1
+  maxSpeed: 1.5
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2
@@ -5694,7 +5694,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000019073, y: 96.003}
+  m_AnchoredPosition: {x: -0.000019073, y: 83}
   m_SizeDelta: {x: 1382.77, y: 330.955}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1806773813
@@ -5719,8 +5719,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: YOU WON!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 48da7a9f9e2697941a17b7d9ba3431b9, type: 2}
-  m_sharedMaterial: {fileID: -6989575714895485758, guid: 48da7a9f9e2697941a17b7d9ba3431b9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 63499d47ddd76d04f90cdf5dcee05a45, type: 2}
+  m_sharedMaterial: {fileID: -8327819794909941043, guid: 63499d47ddd76d04f90cdf5dcee05a45, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5744,8 +5744,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200
-  m_fontSizeBase: 200
+  m_fontSize: 220
+  m_fontSizeBase: 220
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6165,7 +6165,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2092580956}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -83.69401, y: 429.87997, z: -3862.7996}
+  m_LocalPosition: {x: -83.69401, y: 388, z: -3862.7996}
   m_LocalScale: {x: 230.45535, y: 230.45535, z: 230.45535}
   m_ConstrainProportionsScale: 0
   m_Children:
